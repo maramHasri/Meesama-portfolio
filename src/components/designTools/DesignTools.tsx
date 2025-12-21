@@ -1,4 +1,3 @@
-import React from "react";
 import "./DesignTools.css";
 import designToolsImage from "../../assets/image/Layer_1.png";
 

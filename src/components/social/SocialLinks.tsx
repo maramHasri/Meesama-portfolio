@@ -1,4 +1,3 @@
-import React from "react";
 import "./SocialLinks.css";
 
 const SocialLinks = () => {

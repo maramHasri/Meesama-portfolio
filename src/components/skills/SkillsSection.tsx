@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./SkillsSection.css";
 
 interface SkillButtonProps {
@@ -7,7 +7,7 @@ interface SkillButtonProps {
   onClick: () => void;
 }
 
-const SkillButton: React.FC<SkillButtonProps> = ({ title, color, onClick }) => {
+const SkillButton = ({ title, color, onClick }: SkillButtonProps) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./profilecard.css";
 import avatar from "../../assets/image/avatar.png";
 

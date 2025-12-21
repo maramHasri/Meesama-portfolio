@@ -1,5 +1,4 @@
 // App.tsx
-import React from 'react';
 import ProfileCard from './components/card/profilecard';
 import DesignTools from './components/designTools/DesignTools';
 import SkillsSection from './components/skills/SkillsSection';
