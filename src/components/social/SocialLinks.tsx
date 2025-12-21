@@ -1,10 +1,11 @@
 import "./SocialLinks.css";
+import behanceLogo from "../../assets/image/ri_behance-fill.svg";
 
 const SocialLinks = () => {
   return (
     <div className="social-links">
       <a
-        href="https://instagram.com"
+        href="https://www.instagram.com/meesama7/"
         target="_blank"
         rel="noopener noreferrer"
         className="social-button"
@@ -46,25 +47,13 @@ const SocialLinks = () => {
         </svg>
       </a>
       <a
-        href="https://behance.net"
+        href="https://www.behance.net/6c4370bd"
         target="_blank"
         rel="noopener noreferrer"
         className="social-button"
         aria-label="Behance"
       >
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="M22 7h-4M22 11h-4M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
-          <rect x="2" y="6" width="12" height="12" rx="2"></rect>
-        </svg>
+        <img src={behanceLogo} alt="Behance" />
       </a>
     </div>
   );

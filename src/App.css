@@ -52,7 +52,7 @@
 .portfolio-bottom {
   display: flex;
   flex-direction: row;
-  gap: 60px;
+  gap: 440px;
   align-items: flex-end;
   justify-content: center;
   width: 100%;

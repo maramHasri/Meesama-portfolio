@@ -1,13 +1,18 @@
 import { useState } from "react";
 import "./SkillsSection.css";
+import programmingImage from "../../assets/image/prograam.svg";
+import uxImage from "../../assets/image/ux.svg";
+import illustrationImage from "../../assets/image/illestrution.svg";
+import animationImage from "../../assets/image/animation.svg";
 
 interface SkillButtonProps {
   title: string;
   color: string;
+  image: string;
   onClick: () => void;
 }
 
-const SkillButton = ({ title, color, onClick }: SkillButtonProps) => {
+const SkillButton = ({ title, color, image, onClick }: SkillButtonProps) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -25,18 +30,8 @@ const SkillButton = ({ title, color, onClick }: SkillButtonProps) => {
         onClick={handleClick}
       >
         <div className="skill-content">
-          <div className="devices-container">
-            <div className="device desktop">
-              <div className="screen">
-                <div className="screen-content"></div>
-              </div>
-              <div className="stand"></div>
-            </div>
-            <div className="device mobile">
-              <div className="screen">
-                <div className="screen-content"></div>
-              </div>
-            </div>
+          <div className="skill-image-container">
+            <img src={image} alt={title} className="skill-image" />
           </div>
         </div>
       </button>
@@ -55,21 +50,25 @@ const SkillsSection = () => {
       <SkillButton
         title="PROGRAMMING"
         color="#B7E2EC"
+        image={programmingImage}
         onClick={() => handleSkillClick("PROGRAMMING")}
       />
       <SkillButton
         title="UI UX"
         color="#F6DFA2"
+        image={uxImage}
         onClick={() => handleSkillClick("UI UX")}
       />
       <SkillButton
         title="ILLUSTRATION"
         color="#FFC1A5"
+        image={illustrationImage}
         onClick={() => handleSkillClick("ILLUSTRATION")}
       />
       <SkillButton
         title="ANIMATION"
         color="#A6F2C1"
+        image={animationImage}
         onClick={() => handleSkillClick("ANIMATION")}
       />
     </div>
