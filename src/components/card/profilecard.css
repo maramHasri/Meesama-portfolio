@@ -1,0 +1,62 @@
+.card {
+  width: 493px;
+  height: 365px;
+  padding: 20px;
+  background-color: white;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Inter', system-ui, Arial, sans-serif;
+  direction: rtl; /* لأن النص عربي */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.card-info h2 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.verified {
+  color: #1da1f2; /* أزرق التوثيق */
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.card-info p {
+  margin: 5px 0 0 0;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.card-description {
+  margin-top: 15px;
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+.card-description a {
+  text-decoration: none;
+  color: #5cb7b7;
+}

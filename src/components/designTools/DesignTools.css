@@ -1,0 +1,35 @@
+.design-tools {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.design-tools-image {
+  width: 365px;
+  height: 365px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.design-tools-placeholder {
+  padding: 20px;
+  border: 2px dashed #999;
+  border-radius: 8px;
+  text-align: center;
+  color: #666;
+  min-width: 200px;
+}
+
+.design-tools-placeholder p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.placeholder-hint {
+  font-size: 12px !important;
+  color: #999;
+}

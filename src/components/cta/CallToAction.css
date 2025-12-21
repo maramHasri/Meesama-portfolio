@@ -1,0 +1,147 @@
+.cta-container {
+  position: relative;
+}
+
+.speech-bubble {
+  background: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 20px 25px;
+  position: relative;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.speech-bubble:hover {
+  transform: scale(1.05);
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid black;
+}
+
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 32px;
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 13px solid white;
+  z-index: 1;
+}
+
+.cta-text {
+  margin: 0 0 15px 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+}
+
+.cta-lines {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+
+.line {
+  height: 2px;
+  background: black;
+  border-radius: 1px;
+  opacity: 0.3;
+}
+
+.line:nth-child(1) {
+  width: 80%;
+}
+
+.line:nth-child(2) {
+  width: 60%;
+}
+
+.line:nth-child(3) {
+  width: 70%;
+}
+
+.envelope-icon {
+  position: relative;
+  display: inline-block;
+  color: #ffd700;
+  margin-top: 5px;
+}
+
+.envelope-icon svg {
+  position: relative;
+  z-index: 2;
+}
+
+.envelope-rays {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+}
+
+.ray {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background: #ffd700;
+  opacity: 0.6;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.ray-1 {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 0s;
+}
+
+.ray-2 {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  animation-delay: 0.5s;
+}
+
+.ray-3 {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  animation-delay: 1s;
+}
+
+.ray-4 {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(270deg);
+  animation-delay: 1.5s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+
