@@ -8,7 +8,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 const PORT = process.env.PORT || 10000;
-const distPath = join(__dirname, 'dist');
+const distPath = join(__dirname, 'build');
 
 const mimeTypes = {
   '.html': 'text/html',
