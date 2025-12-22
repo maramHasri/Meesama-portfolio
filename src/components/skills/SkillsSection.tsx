@@ -42,7 +42,7 @@ const SkillButton = ({ title, color, image, onClick }: SkillButtonProps) => {
 const SkillsSection = () => {
   const handleSkillClick = (skill: string) => {
     if (skill === "PROGRAMMING") {
-      window.open("https://github.com/maramHasri", "_blank", "noopener,noreferrer");
+      window.open("https://github.com/maramHasri/SWE-Banking-system-with-design-patterns-", "_blank", "noopener,noreferrer");
     } else {
       console.log(`Clicked on ${skill}`);
       // You can add navigation or modal logic here for other skills
